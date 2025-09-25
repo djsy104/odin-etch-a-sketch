@@ -1,5 +1,6 @@
 const container = document.querySelector('#container');
 const fragment = document.createDocumentFragment(); //Temporary staging area before adding to the DOM
+const button = document.querySelector('#pop-up');
 createGrid(256);
 
 function createGrid(count) {
@@ -12,3 +13,5 @@ function createGrid(count) {
 
   container.appendChild(fragment);
 }
+
+button.addEventListener('click', () => {});
